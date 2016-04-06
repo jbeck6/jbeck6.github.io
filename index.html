@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Josh Beck</title>
+<head>
+	<meta charset="UTF-8">
+	<title>Josh Beck</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-  <h1>Josh Beck's <small>personal website</small><img src="me.jpg" class="img-circle" alt="Me and Jessica" width="200" height="200"></h1>
-  </body>
+	<style>
+	/* Remove the navbar's default margin-bottom and rounded borders */ 
+	.navbar {
+		margin-bottom: 0;
+		border-radius: 0;
+	}
+	
+	/* Add a gray background color and some padding to the footer */
+	footer {
+		background-color: #f2f2f2;
+		padding: 25px;
+	}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#">Portfolio</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1><img src="http://jbeck6.github.io/me.jpg" class="img-circle" alt="Me and Jessica" width="100" height="100">Josh Beck's <small>personal website</small></h1>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="col-sm-9">
+			<h2><b>Resume</b></h2>
+		</div>
+		<div class="col-sm-9">
+			<div class="well">
+				<h4><b>About Me</b></h4>
+				<p>I am currently a Senior in Computer Science at the University of Tennessee, Knoxville. I will graduate this May with my B.S. from the College of Engineering. I have had experience with a variety of tools and programming languages that have made me a well-rounded programmer in my time at UT. I have experience creating web applications in many languages such as Python, Php, Perl, and Javascript, as well as database management using MySQL and SQLite. I also have experience using programming in languages such as C++, C, and Python to create more tradition applications for data structures and algorithms. </p>
+			</div>
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="well">
+						<h4><b>Relevent Course Work</b></h4>            
+						<ul>
+							<li>Web Security<ul>Creating web applications, and finding security flaws in other web applications. Some vulnerabilities discussed and practice included: Database Injection, Cross-Site Scripting, Attacking Authentication, Command Injection, Path Traversal, etc.</ul></li>
+							<li>Databases and Scripting Languages<ul>Creating and using databases. Discussing the relational database model and how to design a relational database. Learning Perl, PHP, and Javascript, and their intended uses and best use cases.</ul></li>
+							<li>Graphics<ul>Studying the 3D pipeline, 3D polygon rendering (clipping, scan conversion, and visibility algorithms), illumination models, shading models, global illumination, ray-tracing and shading languages.</ul></li>
+							<li>Software Engineering<ul>Learning about software processes and architecture, along with how to work in groups to get projects done in a predetermined time frame. Learning how to use tools such as version control and gdb to assist in creating applications. Discussed testing of applications for bugs in production code.</ul></li>
+							<li>Data Structures and Algorithms I & II</li>
+							<li>Systems Programming</li>
+							<li>Technical and Proffesional Writing<ul>Learning how to write proposals, status reports, and formal reports</ul></li>
+						</ul> 
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="well">
+						<h4><b>Examples of Course Work</b></h4>
+						<ul>
+							<li>Phong Shading Using JavaScript</li>
+							<li>Gouraud Shading Using JavaScript</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
 </html>
