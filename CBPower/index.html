@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Josh Beck</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+	background-color: #f2f2f2;
+	padding: 25px;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand" href="#">Home</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="/about">About This Site</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="jumbotron">
+	<div class="container text-center">
+		<div class="col-sm-1">
+			<img src="http://jbeck6.github.io/me.jpg" class="img-circle" alt="Me and Jessica" width="100" height="100">
+		</div>
+		<div class="col-sm-9" >
+			<h1>Josh Beck's <small>personal website</small></h1>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="col-sm-9">
+		<h2><b>CBPower</b></h2>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="well">
+				<h4><b>About</b></h4>
+				<p>CBPower is a website that uses the ELO rating system to rank college basketball teams based on their wins and losses. The ELO system was created to be a more rigorous system for ranking chess players and has been adopted by several other groups such as League of Legends and DOTA to rank teams and players. <br><br> The website was built to scrape scores for games, put them into a database, perform the ELO rating system on the teams, then rank them based on ELO ratings. This data was then presented to users on the screen in the form on a list of teams and their rankings in descending order. <br><br> We then added functionality to allow users to see graphs of a teams progression throughout the year using highcharts.</p>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="well">
+				<h4><b>Technologies Used</b></h4>
+				<ul>
+					<li>Python
+						<ul>Python was used to perform the web-scraping and ELO ratings
+						</ul>
+					</li>
+					<li>Flask/Jinja
+						<ul>Flask was used as the framework to generate the pages of the site. Jinja was used to make html templates.
+						</ul>
+					</li>
+					<li>Bootstrap
+						<ul>Bootstrap was used for the general layout and format of the site.
+						</ul>
+					</li>
+					<li>Highcharts
+						<ul>Highcharts is an open-source Javascript library we used to create graphs of team progression.
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="well">
+				<h4>Download the ZIP</h4>
+				<p>Here is a zip file of the project. To run it you will need to run cbpower.py.
+					<br><br><a href="cbpower.zip">CBPower ZIP</a>
+					<p>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
